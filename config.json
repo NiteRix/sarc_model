@@ -1,0 +1,136 @@
+{
+  "max_points": 5,
+  "features": [
+    "Joint / back pain",
+    "Night sweats",
+    "Fever / fatigue",
+    "Abdominal pain",
+    "Chronic diarrhea",
+    "Nausea / vomiting",
+    "Weight loss",
+    "Enlarged spleen",
+    "Enlarged liver",
+    "Jaundice",
+    "Enlarged lymph nodes",
+    "Blocked nose",
+    "Dry cough",
+    "Oral ulcers",
+    "Nerve pain / numbness",
+    "Shortness of breath",
+    "Muscle pain",
+    "Palpitations / heart block",
+    "Skin lesions / itching",
+    "Imaging: enlarged chest lymph nodes",
+    "Imaging: lung nodules / infiltrates",
+    "Heart tests abnormal (ECG / echo / MRI)",
+    "Liver tests abnormal"
+  ],
+  "labs": {
+    "ACE": {
+      "column": "ACE (U/L)",
+      "unit": "U/L",
+      "low": 8,
+      "high": 52,
+      "direction": "high",
+      "max_points": 5
+    },
+    "Serum calcium": {
+      "column": null,
+      "unit": "mg/dL",
+      "low": 8.5,
+      "high": 10.5,
+      "direction": "high",
+      "max_points": 4
+    },
+    "Lymphocyte count": {
+      "column": null,
+      "unit": "x10^3/uL",
+      "low": 1.0,
+      "high": 4.8,
+      "direction": "low",
+      "max_points": 2
+    },
+    "ALP": {
+      "column": null,
+      "unit": "U/L",
+      "low": 44,
+      "high": 147,
+      "direction": "high",
+      "max_points": 2
+    },
+    "CRP": {
+      "column": "CRP (mg/L)",
+      "unit": "mg/L",
+      "low": 0,
+      "high": 5,
+      "direction": "high",
+      "max_points": 1
+    },
+    "ESR": {
+      "column": null,
+      "unit": "mm/hr",
+      "low": 0,
+      "high": 20,
+      "direction": "high",
+      "max_points": 1
+    },
+    "LDH": {
+      "column": "LDH (U/L)",
+      "unit": "U/L",
+      "low": 140,
+      "high": 280,
+      "direction": "high",
+      "max_points": 1
+    },
+    "WBC": {
+      "column": "WBC (×10³/µL)",
+      "unit": "x10^3/uL",
+      "low": 4.0,
+      "high": 11.0,
+      "direction": "high",
+      "max_points": 1
+    }
+  },
+  "severity_tiers": [
+    [
+      1.0,
+      0.0
+    ],
+    [
+      1.5,
+      0.34
+    ],
+    [
+      2.0,
+      0.67
+    ],
+    [
+      999,
+      1.0
+    ]
+  ],
+  "exclude_cases": [],
+  "prior_points": {
+    "Imaging: enlarged chest lymph nodes": 5,
+    "Imaging: lung nodules / infiltrates": 2,
+    "Skin lesions / itching": 3,
+    "Dry cough": 2,
+    "Shortness of breath": 1,
+    "Joint / back pain": 2,
+    "Enlarged lymph nodes": 1,
+    "Enlarged liver": 1,
+    "Enlarged spleen": 1,
+    "Liver tests abnormal": 1,
+    "Palpitations / heart block": 2,
+    "Heart tests abnormal (ECG / echo / MRI)": 1,
+    "Blocked nose": 1,
+    "Oral ulcers": 1,
+    "Nerve pain / numbness": 1,
+    "Night sweats": -2,
+    "Weight loss": -1,
+    "Fever / fatigue": -1
+  },
+  "prior_weight": 40,
+  "min_points": -2,
+  "pretest_probability": 0.1
+}
