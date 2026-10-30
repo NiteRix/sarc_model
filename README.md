@@ -1,5 +1,8 @@
 # Sarcoidosis Likelihood Score (prototype)
 
+
+# Website link > https://sarcscore.streamlit.app/
+
 ## What it does
 1. Gives each symptom / finding points (-2 to 5): starts from clinical knowledge of how typical it is
    for sarcoidosis, then adjusted by the case sheet (how often it appears in sarcoidosis vs look-alike diseases).
